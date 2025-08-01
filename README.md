@@ -16,6 +16,7 @@ A Laravel-based word puzzle game with role-based access for admins and students.
 ### 1. Clone the Repository
 
 git clone https://github.com/jeenu101/word-puzzle.git
+
 cd word-puzzle
 
 ### 2. Install Dependencies
