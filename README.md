@@ -15,14 +15,43 @@ A Laravel-based word puzzle game with role-based access for admins and students.
 
 ### 1. Clone the Repository
 
-```bash
 git clone https://github.com/jeenu101/word-puzzle.git
 cd word-puzzle
+
+### 2. Install Dependencies
+
 composer install
+
+### 3. Create Environment File
+
 cp .env.example .env
+
 Update .env with your local database and app configuration.
+
+### 4. Generate Application Key
+
 php artisan key:generate
+
+### 5. Run Database Migrations
+
 php artisan migrate
+
+### 6. Seed Admin or Sample Data
+
 php artisan db:seed
-php artisan serve
+
+### 7. Running Tests
+
 php artisan test
+
+### 8. Run the Application
+php artisan serve
+
+## Other Instructions
+
+you can login the admin using
+Email Address: admin@word-puzzle.com
+Password: admin123
+
+To play game as student you need to register..
+
