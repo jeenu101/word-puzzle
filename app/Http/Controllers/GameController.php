@@ -38,7 +38,10 @@ class GameController extends Controller
             
             $puzzle = $student->getCurrentPuzzle();
             if (!$puzzle || !$puzzle->isActive()) {
-                return redirect()->route('game.index')->with('error', 'Puzzle is not active.');
+                $puzzle = Puzzle::create([
+                    'puzzle_string' => $this->puzzleService->generatePuzzleString(),
+                    'status' => 'active',
+                ]);
             }
 
             // Store the puzzle ID in session for this student

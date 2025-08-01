@@ -57,6 +57,7 @@ class Student extends Model
         
         // If no puzzle found, try to get a random active puzzle
         $puzzle = Puzzle::where('status', 'active')->inRandomOrder()->first();
+        
         return $puzzle;
     }
 
